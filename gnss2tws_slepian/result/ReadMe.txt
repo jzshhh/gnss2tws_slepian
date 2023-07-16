@@ -1,1 +1,1 @@
-Readers can query the results on Zenodo https://zenodo.org/record/8080098
+Readers can query the results on Zenodo https://doi.org/10.5281/zenodo.8118622
