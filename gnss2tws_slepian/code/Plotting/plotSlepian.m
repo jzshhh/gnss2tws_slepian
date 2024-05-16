@@ -78,4 +78,4 @@ for z=1:length(l)
 end
 close(wbh);
 saveas(gcf,'result/figure/Slepian.tiff');
-delete(gcf);
+% delete(gcf);

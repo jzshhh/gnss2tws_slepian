@@ -45,4 +45,4 @@ for i=1:size(coeff,2)
     title(['PC' num2str(i)]);
 end
 saveas(gcf,'result/figure/Spatial_functions.tiff');
-delete(gcf);
+% delete(gcf);

@@ -29,4 +29,4 @@ line(xsize,[val(ok),val(ok)],'LineStyle','--','Color','c','LineWidth',1);
 text(ok+5,val(ok)+0.03,sprintf('(%d, %6.4f)',ok,val(ok)));
 grid on 
 saveas(gcf,'result/figure/Eigenvalue.tiff');
-delete(gcf);
+% delete(gcf);
