@@ -1,6 +1,6 @@
 %% Constant variable
 global Aq  Gq gq pw lmax;
-Aq=6371000; Gq=6.67259*10^-11;gq=9.8242;pw =1000; lmax=100;
+Aq=6371000; Gq=6.67259*10^-11;gq=9.8242;pw =1000; lmax=80; %lmax=60；lmax=100;
 
 %% GNSS data
 timespan = [20060101 20221231];
@@ -22,8 +22,8 @@ Gauss_radius=150;
 boundary_file=[pwd '/data/USA_border_L1.txt'];  % real boundary file
 [long_bou, lat_bou]=textread(boundary_file,'%f %f','commentstyle','shell');
 boundary=[long_bou lat_bou];
-% basis_order=1:42; % Drawing Slepian basis function according to orders 
-basis_order=[]; 
+basis_order=1:42; % Drawing Slepian basis function according to orders 
+% basis_order=[]; 
 
 %%
 Initialization(long_range,lati_range,integral_edge_file,regionName);
