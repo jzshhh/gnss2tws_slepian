@@ -1,1 +1,1 @@
-Readers can query the results on Zenodo https://doi.org/10.5281/zenodo.8118622
+The subfolder ‘result/’ saves all output results and figures for the final analysis and instruction.
