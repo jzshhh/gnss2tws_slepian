@@ -24,6 +24,6 @@ for i=1:size(data_raw,2)
     for j=1:length(months)
         ok=find(months(j)==yyyymm);
         time_mon(j,1)=months(j)*100+15;
-        data_mon(j,i)=nanmean(data_raw(ok,i));
+        data_mon(j,i)=mean(data_raw(ok,i),'includenan');
     end
 end

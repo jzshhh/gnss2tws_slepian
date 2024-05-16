@@ -18,7 +18,7 @@ function [gps_ewh_smooth,gps_season,ewh_diff,ewh_defi,ewh_surp,gnss_dsi] = cal_g
 % Institution: Sun Yat-Sen University 
 % E-mail: jiangzhsh@mail.sysu.edu.cn
 
-gps_ewh_smooth=smooth(medfilt1(detrend(gnss_ewh),3),3);
+gps_ewh_smooth=movmean(detrend(gnss_ewh),3);
 
 st_yr=fix(time_mon(1)/10000);
 en_yr=fix(time_mon(end)/10000);
@@ -35,8 +35,8 @@ end
 ewh=nan(12,nyears);
 ewh(ok2)=gps_ewh_smooth(ok1);
 
-ewh_mon_ave = nanmean(ewh,2);
-ewh_mon_std = nanstd(ewh,0,2);
+ewh_mon_ave = mean(ewh,2,'includenan');
+ewh_mon_std = std(ewh,0,2,'includenan');
 
 gps_dsi_tmp=nan(12,nyears);
 diff_ewh_emp=nan(12,nyears);
