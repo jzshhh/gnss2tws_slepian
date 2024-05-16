@@ -10,8 +10,8 @@ Readers can download the complete software (including the code and one example (
 3. It will take a long time to run our example for the first time and you can also make "lmax" smaller (e.g., 60) to test whether the program can run successfully on your computer. 
 4. In the folder of "HATool",  two main functions ("plot_gnss_area_ewh_series_main.m" and "plot_gnss_drought_characterization_main.m") are used for conventional hydrological analysis after running your example.
 5. If your MATLAB can achieve parallel computing, it will save a lot of time to calculate Slepian basis functions which are the most time-consuming.
-6. If you have any questions and suggestions, you can contact the first author (Name: Zhongshan Jiang E-mail: jiangzhsh@mail.sysu.edu.cn).
 7. This tool would call SLEPIAN Alpha (Harig et al., 2015; Harig and Simons 2012; Simons et al. 2006) to calculate Slepian basis functions, please also acknowledge them if you use it.
+6. If you have any questions and suggestions, you can contact the first author (Name: Zhongshan Jiang E-mail: jiangzhsh@mail.sysu.edu.cn).
 
 # To acknowledge use of this software, please cite the following publications
 Harig, C., Lewis, K.W., Plattner, A., & Simons, F.J. (2015). A Suite of Software Analyzes Data on the Sphere. Eos, 96. doi: 10.1029/2015eo025851
