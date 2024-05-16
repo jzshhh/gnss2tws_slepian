@@ -26,7 +26,7 @@ for i=1:size(coeff,2)
     set(gca,'xlim',[year(1) year(end)]);
 end
 saveas(gcf,'result/figure/Temporal_functions.tiff');
-delete(gcf);
+% delete(gcf);
 
 nn=ceil(size(coeff,2)/3);
 

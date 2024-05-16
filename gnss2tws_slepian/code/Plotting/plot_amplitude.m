@@ -54,6 +54,6 @@ scatter(GPS_positions(:,1),GPS_positions(:,2));
 caxis([0,max(TWSann1)]);
 colorbar;
 saveas(gcf,'result/figure/gnsstws.tiff');
-delete(gcf);
+% delete(gcf);
 
 end

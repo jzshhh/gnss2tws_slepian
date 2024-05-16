@@ -40,8 +40,8 @@ if rem(length(l),nplot)==0
 else
     numraw=fix(length(l)/nplot)+1;
 end
+h=figure('color',[1 1 1]);
 set(gcf, 'outerposition', [100 100 1000 800]);
-h=figure(1);
 set(h,'color','w');
 wbh=waitbar(0,'Ploting Slepian basis functions...');
 for z=1:length(l)
@@ -59,7 +59,7 @@ for z=1:length(l)
     %     ok= abs(G)<=10^(-2);
     %     G(ok)=nan;
     %     subplot(numraw,nplot,z)
-    subplot(numraw,nplot,i);
+    subplot(numraw,nplot,z);
     h=pcolor(X,Y,G);
     %     colorbar;
     caxis([-1,1]);

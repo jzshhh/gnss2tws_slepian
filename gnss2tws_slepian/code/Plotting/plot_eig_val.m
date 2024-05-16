@@ -12,8 +12,8 @@ function plot_eig_val(val,cutoff)
 % E-mail: jiangzhsh@mail.sysu.edu.cn
 
 disp('Ploting Slepian eigenvalues...');
-h=figure();
-set(h,'color','w');
+h=figure('color',[1 1 1]);
+% set(h,'color','w');
 ok=find(val>=cutoff,1,'last');
 x=1:length(val);
 semilogx(x,val,'-o');
