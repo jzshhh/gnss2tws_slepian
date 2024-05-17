@@ -17,8 +17,8 @@ function plotSlepian(val,vec,lmax,l,long_range,lati_range,regionName)
 % E-mail: jiangzhsh@mail.sysu.edu.cn
 
 nplot=6;
-long_range = downsample(long_range,2);
-lati_range =downsample(lati_range,2);
+long_range = long_range(1:2:end);
+lati_range = lati_range(1:2:end);
 disp('Ploting Slepian basis functions');
 load(['REGIONS/',regionName,'.mat']);
 region=XY;
